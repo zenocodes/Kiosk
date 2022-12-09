@@ -1,6 +1,8 @@
 <h3 class="title">
   Cart
-  <button id="clear-cart" *ngIf="items.length > 1" (click)="clearCart()">Clear Cart</button>
+  <button id="clear-cart" *ngIf="items.length > 0" (click)="clearCart()">
+    Clear Cart
+  </button>
 </h3>
 
 <p>
@@ -22,7 +24,7 @@
   (ngSubmit)="onSubmit()"
   *ngIf="items.length > 0"
 >
-  <h3 class="amount">Total:</h3>
+  <h3 class="amount">Total: {{ getAmount() | currency }}</h3>
 
   <div>
     <label for="name">Name</label>

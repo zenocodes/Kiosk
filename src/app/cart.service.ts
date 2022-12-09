@@ -37,4 +37,8 @@ export class CartService {
       '/assets/shipping.json'
     );
   }
+
+  getAmount() {
+    return this.items.map(item => item.price).reduce((a,b) => a+b);
+  }
 }

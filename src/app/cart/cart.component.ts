@@ -29,6 +29,10 @@ export class CartComponent {
     this.cartService.clearCart();
   }
 
+  getAmount() {
+    return this.cartService.getAmount();
+  }
+
   onSubmit(): void {
     this.items = this.cartService.clearCart();
     console.warn('Your order has been submitted', this.checkOutForm.value);
