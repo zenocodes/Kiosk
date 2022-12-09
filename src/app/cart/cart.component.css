@@ -1,0 +1,22 @@
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#clear-cart {
+  background-color: #ff0000;
+  font-weight: bold;
+}
+
+.cart-item div {
+  display: flex;
+  align-items: center;
+}
+
+i.material-icons {
+  color: #ff0000;
+  margin-left: 20px;
+  cursor: pointer;
+}
